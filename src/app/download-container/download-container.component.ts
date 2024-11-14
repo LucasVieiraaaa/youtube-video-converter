@@ -11,6 +11,8 @@ export class DownloadContainerComponent implements OnInit {
 
   loading: boolean = false;
   stringURL: string = '';
+  formatOption: string = '';
+
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
@@ -26,5 +28,6 @@ export class DownloadContainerComponent implements OnInit {
       }, 2000);
     }
     console.log("chegou aqui " +this.stringURL)
+    console.log("chegou aqui " +this.formatOption)
   }
 }

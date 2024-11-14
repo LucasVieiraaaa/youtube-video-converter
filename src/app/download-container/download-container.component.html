@@ -14,7 +14,7 @@
 
       <mat-form-field appearance="outline">
         <mat-label>Convert to</mat-label>
-        <mat-select name="format">
+        <mat-select [(ngModel)]="formatOption" name="format">
           <mat-option value="MP3">MP3</mat-option>
           <mat-option value="MP4">MP4</mat-option>
           <mat-option value="OGG">OGG</mat-option>
