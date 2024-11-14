@@ -19,7 +19,7 @@ export class DownloadContainerComponent implements OnInit {
 
   }
 
-  convertURL(){
+  async convertURL(_stringUrl: string, _formatOption: string) {
     this.loading = true
     if (this.loading == true) {
       this.spinner.show();
@@ -27,7 +27,6 @@ export class DownloadContainerComponent implements OnInit {
         this.spinner.hide();
       }, 2000);
     }
-    console.log("chegou aqui " +this.stringURL)
-    console.log("chegou aqui " +this.formatOption)
+    console.log("chegou aqui " + _stringUrl)
   }
 }
