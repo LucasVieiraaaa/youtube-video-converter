@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+import * as ytdl from 'ytdl-core';
 
 @Component({
   selector: 'app-download-container',
@@ -9,6 +10,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class DownloadContainerComponent implements OnInit {
 
   loading: boolean = false;
+  stringURL: string = '';
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
@@ -23,5 +25,6 @@ export class DownloadContainerComponent implements OnInit {
         this.spinner.hide();
       }, 2000);
     }
+    console.log("chegou aqui " +this.stringURL)
   }
 }
