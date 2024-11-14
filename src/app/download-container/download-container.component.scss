@@ -50,3 +50,31 @@ p{
 mat-label{
     color: gray;
 }
+
+@media screen and (max-width: 1700px) {
+    .card{
+        max-width: 500px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .card{
+        max-width: 500px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+        max-width: 500px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card{
+        max-width: 100%;
+        width: 80%;
+    }
+}
