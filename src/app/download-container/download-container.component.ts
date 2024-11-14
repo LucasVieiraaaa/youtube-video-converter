@@ -21,7 +21,7 @@ export class DownloadContainerComponent implements OnInit {
       this.spinner.show();
       setTimeout(() => {
         this.spinner.hide();
-      }, 500);
+      }, 2000);
     }
   }
 }
