@@ -1,19 +1,23 @@
-<div>
+<div class="d-flex">
   <h2>Youtube Video Converter</h2>
-  <div>
+  <div class="card">
     <form action="">
       <p>Insert a Youtube video URL below</p>
-      <mat-form-field appearance="outline" >
+      <mat-form-field appearance="outline">
+        <mat-label>URL</mat-label>
         <input matInput maxlength="1000">
       </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Type</mat-label>
+        <mat-select>
+          <mat-option value="MP3">MP3</mat-option>
+          <mat-option value="MP4">MP4</mat-option>
+          <mat-option value="OGG">OGG</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button matTooltip="Convert">Convert</button>
     </form>
-    <mat-form-field appearance="outline">
-      <mat-select>
-        <mat-option value="MP3">MP3</mat-option>
-        <mat-option value="MP4">MP4</mat-option>
-        <mat-option value="OGG">OGG</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <button>Exemple</button>
   </div>
 </div>

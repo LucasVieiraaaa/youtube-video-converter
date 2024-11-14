@@ -1,0 +1,33 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #000;
+    gap: 1em;
+
+    & img {
+        width: clamp(80px, 120px, 150px);
+        border-radius: 1.5em;
+    }
+}
+
+.text-content {
+    text-align: center;
+    display: flex;
+    gap: 1.5em;
+    padding: 1em;
+
+    & a {
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 2px solid #fab700;
+        transition: 0.3s;
+    }
+
+    & a:hover{
+        color: #fab700;
+    }
+}
