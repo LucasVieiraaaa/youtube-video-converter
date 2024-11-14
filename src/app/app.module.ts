@@ -11,6 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTooltip } from '@angular/material/tooltip';
 import { MatButton } from '@angular/material/button';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatButton } from '@angular/material/button';
     MatSelectModule,
     MatTooltip,
     MatButton,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSpinnerModule,
   ],
   providers: [
     provideAnimationsAsync('noop'),

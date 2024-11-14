@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-download-container',
@@ -8,9 +8,20 @@ import { FormControl } from '@angular/forms';
 })
 export class DownloadContainerComponent implements OnInit {
 
-  constructor() { }
+  loading: boolean = false;
+  constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
+
   }
 
+  convertURL(){
+    this.loading = true
+    if (this.loading == true) {
+      this.spinner.show();
+      setTimeout(() => {
+        this.spinner.hide();
+      }, 500);
+    }
+  }
 }
