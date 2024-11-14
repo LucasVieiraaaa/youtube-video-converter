@@ -1,0 +1,27 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    color: gray;
+    text-align: left;
+    max-width: 40em;
+    font-weight: 100;
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    margin-top: 1em;
+    text-align: left;
+    font-weight: 400;
+}
